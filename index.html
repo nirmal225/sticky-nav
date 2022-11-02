@@ -5,8 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .main{
+            height: 100vh;
+            display: grid;
+            place-items: center;
+            background-color: rgba(197, 118, 15, 0.342);
+        }
+
+        .nav{
+            width: 100%;
+            max-width: 650px;
+            height: 70px;
+            border-radius:12px;
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+            background-color: #fff;
+            box-shadow: 0 5px 6px 1px #000;
+        }
+
+        a{
+            display: grid;
+            place-items: center;
+            text-decoration: none;
+        }
+
+        i{
+            font-size: 37px;
+            color: #ff6150;
+            transition: 0.8s ease-in-out;
+            /* position: relative; */
+
+        }
+
+        i:hover{
+            transform: scale(1.4)rotateY(180deg);
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello</h1>
+    <div class="main">
+        <div class="nav">
+            <a href="#" ><i class="fa-solid fa-house-chimney"></i>
+            <a href="#" > <i class="fa-solid fa-user-tie"></i>
+            <a href="#" > <i class="fa-solid fa-search"></i>
+            <a href="#" > <i class="fa-solid fa-wallet"></i>
+            <a href="#" > <i class="fa-solid fa-message"></i>
+            </a>
+        </div>
+    </div>
 </body>
 </html>
